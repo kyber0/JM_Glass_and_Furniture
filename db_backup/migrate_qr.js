@@ -1,4 +1,4 @@
-const db = require('./config/db');
+const db = require('../backend/config/db');
 
 async function addColumnIfMissing(col, type) {
     const [rows] = await db.query(
@@ -10,16 +10,13 @@ async function addColumnIfMissing(col, type) {
         await db.query(`ALTER TABLE orders ADD COLUMN ${col} ${type}`);
         console.log(`✅ Added column: ${col}`);
     } else {
-        console.log(`ℹ️  Column already exists: ${col}`);
+        console.log(`ℹ️  Already exists: ${col}`);
     }
 }
 
 async function run() {
     try {
-        await addColumnIfMissing('processed_at', 'DATETIME NULL DEFAULT NULL');
-        await addColumnIfMissing('shipped_at',   'DATETIME NULL DEFAULT NULL');
-        await addColumnIfMissing('delivered_at', 'DATETIME NULL DEFAULT NULL');
-        await addColumnIfMissing('completed_at', 'DATETIME NULL DEFAULT NULL');
+        await addColumnIfMissing('qr_confirmed_at', 'DATETIME NULL DEFAULT NULL');
         console.log('✅ Migration complete');
     } catch (e) {
         console.error('❌ Migration failed:', e.message);
