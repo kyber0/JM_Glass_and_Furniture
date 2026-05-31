@@ -41,5 +41,5 @@ yarn-error.*
 /android
 
 # editor and local tunnel files
-.cursor/
+.antigravity/
 .tunnelurl
