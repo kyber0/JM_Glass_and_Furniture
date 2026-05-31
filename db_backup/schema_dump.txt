@@ -1,0 +1,1 @@
+handymen:\nhandyman_id, shop_id, name, phone, status, created_at\n\nproducts:\nproduct_id, category_id, theme, title, description, price, stock_quantity, image_url, is_active, created_at, shop_id, sizes, colors, specs, sold_count, is_hidden

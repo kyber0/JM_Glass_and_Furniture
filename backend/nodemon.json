@@ -1,0 +1,14 @@
+{
+    "watch": ["."],
+    "ext": "js,mjs,cjs,json,env",
+    "ignore": [
+        "uploads/*",
+        "logs/*",
+        "*.log",
+        "../.tunnelurl",
+        "../services/*",
+        "../screens/*",
+        "../node_modules/*"
+    ],
+    "delay": "500"
+}

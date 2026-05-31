@@ -1,0 +1,37 @@
+BASE TABLES:
+ - activity_logs
+ - carousel_banners
+ - cart_items
+ - categories
+ - custom_requests
+ - disputes
+ - faqs
+ - favorites
+ - handymen
+ - messages
+ - notifications
+ - orders
+ - order_items
+ - payment_methods
+ - payouts
+ - platform_settings
+ - points_transactions
+ - products
+ - product_images
+ - reported_problems
+ - reviews
+ - shops
+ - users
+ - user_addresses
+ - user_points
+ - user_vouchers
+ - vouchers
+
+VIEWS:
+ - vw_active_handyman_tasks
+ - vw_customer_lifetime_value
+ - vw_product_details
+ - vw_sales_by_month
+ - vw_seller_dashboard_stats
+ - vw_top_selling_products
+ - vw_user_orders
